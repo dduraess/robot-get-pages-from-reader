@@ -1,0 +1,31 @@
+1715006669526	geckodriver	INFO	Listening on 127.0.0.1:49592
+1715006669552	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/66/v9zmf0pn5p18jnhnr4_7x2r80000gn/T/rust_mozprofileqTcr2y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1715006669745	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1715006669891	Marionette	INFO	Listening on port 49605
+WebDriver BiDi listening on ws://127.0.0.1:49593
+Read port: 49605
+1715006670035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:49593/devtools/browser/fc97f5dc-cafe-4dba-b5e5-179e771dd53a
+JavaScript warning: https://images-na.ssl-images-amazon.com/images/I/8177uTcYaeL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+JavaScript error: , line 0: uncaught exception: Object
+1715006699873	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://m.media-amazon.com/images/I/B1BJWF0B43L.js, line 9: uncaught exception: Object
+JavaScript error: https://m.media-amazon.com/images/I/B1BJWF0B43L.js, line 9: uncaught exception: Object
+JavaScript error: https://m.media-amazon.com/images/I/B1BJWF0B43L.js, line 9: uncaught exception: Object
+JavaScript error: https://m.media-amazon.com/images/I/B1BJWF0B43L.js, line 9: uncaught exception: Object
+JavaScript error: https://m.media-amazon.com/images/I/B1BJWF0B43L.js, line 9: uncaught exception: Object
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: aWindow is null
+JavaScript warning: https://read.amazon.com/?asin=B00JOGB276&ref_=kwl_kr_iv_rec_1, line 319: Script terminated by timeout at:
+l@https://read.amazon.com/?asin=B00JOGB276&ref_=kwl_kr_iv_rec_1:319:236
+
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1715007302573	Marionette	INFO	Stopped listening on port 49605
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

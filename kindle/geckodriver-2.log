@@ -1,0 +1,20 @@
+1715003135374	geckodriver	INFO	Listening on 127.0.0.1:62065
+1715003135397	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/66/v9zmf0pn5p18jnhnr4_7x2r80000gn/T/rust_mozprofilezghRWF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1715003135582	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1715003135729	Marionette	INFO	Listening on port 62074
+WebDriver BiDi listening on ws://127.0.0.1:62066
+Read port: 62074
+1715003135872	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:62066/devtools/browser/de2a731d-897c-4aa6-90aa-b72d111a57ed
+JavaScript warning: https://images-na.ssl-images-amazon.com/images/I/8177uTcYaeL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+JavaScript error: , line 0: uncaught exception: Object
+1715003165783	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1715003673983	Marionette	INFO	Stopped listening on port 62074

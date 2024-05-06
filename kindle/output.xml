@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.6 on darwin)" generated="2024-05-06T11:52:53.225948" rpa="false" schemaversion="5">
+<suite id="s1" name="Capturar-Paginas" source="/Users/davison/Software/util/kindle/test/capturar-paginas.robot">
+<test id="s1-t1" name="Abrir biblioteca e capturar paginas" line="9">
+<kw name="Ir para biblioteca" owner="resource">
+<kw name="Open Browser na MINHA_URL" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-06T11:52:53.337713" level="INFO">Opening browser 'firefox' to base url 'https://read.amazon.com/landing'.</msg>
+<arg>${MINHA_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-06T11:52:53.337602" elapsed="2.321335"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T11:52:55.660508" level="INFO">Clicking element 'id:top-sign-in-btn'.</msg>
+<arg>id:top-sign-in-btn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T11:52:55.659769" elapsed="0.822194"/>
+</kw>
+<status status="PASS" start="2024-05-06T11:52:53.337184" elapsed="3.144900"/>
+</kw>
+<kw name="Input Username" owner="resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>ap_email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T11:52:56.482556" elapsed="0.012123"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-06T11:52:56.494966" level="INFO">Typing text 'davison.duraes@gmail.com' into text field 'id:ap_email'.</msg>
+<arg>id:ap_email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T11:52:56.494821" elapsed="0.030901"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T11:52:56.526011" level="INFO">Clicking element '//input[@type='checkbox']'.</msg>
+<arg>//input[@type='checkbox']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T11:52:56.525874" elapsed="0.212701"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-06T11:52:56.482261" elapsed="0.256401"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<kw name="Set Log Level" owner="BuiltIn">
+<arg>NONE</arg>
+<doc>Sets the log threshold to the specified level.</doc>
+<status status="PASS" start="2024-05-06T11:52:56.738954" elapsed="0.000130"/>
+</kw>
+<kw name="Get Value From User" owner="Dialogs">
+<var>${password}</var>
+<arg>Input password</arg>
+<arg>hidden=yes</arg>
+<doc>Pauses execution and asks user to input a value.</doc>
+<status status="PASS" start="2024-05-06T11:52:56.739161" elapsed="6.250509"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:ap_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T11:53:02.989847" elapsed="0.011179"/>
+</kw>
+<kw name="Set Log Level" owner="BuiltIn">
+<arg>INFO</arg>
+<doc>Sets the log threshold to the specified level.</doc>
+<status status="PASS" start="2024-05-06T11:53:03.001162" elapsed="0.000178"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-06T11:52:56.738770" elapsed="6.262614"/>
+</kw>
+<kw name="Submit Credentials" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T11:53:03.002267" level="INFO">Clicking element 'id:signInSubmit'.</msg>
+<arg>id:signInSubmit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T11:53:03.001607" elapsed="1.600722"/>
+</kw>
+<status status="PASS" start="2024-05-06T11:53:03.001471" elapsed="1.600944"/>
+</kw>
+<status status="PASS" start="2024-05-06T11:52:53.337023" elapsed="11.265422"/>
+</kw>
+<kw name="Capturar paginas no livro" owner="resource">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T11:53:04.801622" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-06T11:53:04.801756" level="FAIL">Page should have contained element 'id:kr-chevron-right' but did not.</msg>
+<arg>id:kr-chevron-right</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2024-05-06T11:53:04.602830" elapsed="0.201962">Page should have contained element 'id:kr-chevron-right' but did not.</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-05-06T11:53:04.804912" elapsed="0.000014"/>
+</kw>
+<kw name="Get Value From User" owner="Dialogs">
+<var>${pode_prosseguir}</var>
+<arg>Pode prosseguir?</arg>
+<arg>default_value=OK</arg>
+<doc>Pauses execution and asks user to input a value.</doc>
+<status status="NOT RUN" start="2024-05-06T11:53:04.804979" elapsed="0.000012"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${passed}</var>
+<arg>Page Should Contain Element</arg>
+<arg>id:kr-chevron-right</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2024-05-06T11:53:04.805050" elapsed="0.000009"/>
+</kw>
+<while condition="${passed}">
+<iter>
+<kw name="Take Screenshot" owner="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="NOT RUN" start="2024-05-06T11:53:04.805184" elapsed="0.000011"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:kr-chevron-right</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-06T11:53:04.805242" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2024-05-06T11:53:04.805088" elapsed="0.000178"/>
+</iter>
+<status status="NOT RUN" start="2024-05-06T11:53:04.805087" elapsed="0.000194"/>
+</while>
+<kw name="Take Screenshot" owner="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="NOT RUN" start="2024-05-06T11:53:04.805329" elapsed="0.000009"/>
+</kw>
+<status status="FAIL" start="2024-05-06T11:53:04.602659" elapsed="0.202747">Page should have contained element 'id:kr-chevron-right' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-05-06T11:52:53.336709" elapsed="11.468818">Page should have contained element 'id:kr-chevron-right' but did not.</status>
+</test>
+<doc>Abrir Kindle e, selecionado o livro tirar cópia das páginas
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" start="2024-05-06T11:52:53.226613" elapsed="11.579137"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Capturar-Paginas">Capturar-Paginas</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-06T11:52:53.248682" level="WARN">Error in file '/Users/davison/Software/util/kindle/test/resource.robot' on line 420: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-06T11:52:53.248774" level="WARN">Error in file '/Users/davison/Software/util/kindle/test/resource.robot' on line 428: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
